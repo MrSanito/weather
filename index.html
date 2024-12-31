@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link href="./dist/output.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-blue-100 min-h-screen flex items-center justify-center">
+    <div class="bg-white p-6 rounded-lg shadow-md w-full max-w-md">
+      <h1 class="text-3xl font-bold text-gray-700 text-center">Weather App</h1>
+      <input
+        type="text"
+        id="city-input"
+        class="w-full p-3 border rounded-lg mt-4"
+        placeholder="Enter city name..."
+      />
+      <ul id="suggestions" class="mt-2 bg-white border rounded-lg shadow"></ul>
+      <div id="weather-display" class="mt-6 hidden">
+        <h2 id="city-name" class="text-2xl font-bold text-gray-800"></h2>
+        <p id="temperature" class="text-lg text-gray-600"></p>
+        <p id="weather-description" class="text-sm text-gray-500"></p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
